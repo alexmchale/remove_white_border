@@ -6,8 +6,8 @@ SRC = ARGV.shift
 DST = ARGV.shift
 
 if !SRC && !DST
-  puts "usage: remove_white_border INPUT"
-  puts "       remove_white_border INPUT OUTPUT"
+  puts "usage: remove_white_border IMAGE         (replaces the existing file)"
+  puts "       remove_white_border INPUT OUTPUT  (creates the output file)"
 else
   RemoveWhiteBorder::Remover.new(SRC).write(DST)
 end
