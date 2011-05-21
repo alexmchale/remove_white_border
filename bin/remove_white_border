@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require "remove_white_border"
+
+SRC = ARGV.shift
+DST = ARGV.shift
+
+if !SRC && !DST
+  puts "usage: remove_white_border INPUT"
+  puts "       remove_white_border INPUT OUTPUT"
+else
+  RemoveWhiteBorder::Remover.new(SRC).write(DST)
+end

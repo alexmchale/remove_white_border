@@ -6,13 +6,15 @@ Gem::Specification.new do |s|
   s.name        = "remove_white_border"
   s.version     = RemoveWhiteBorder::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Alex McHale"]
+  s.email       = ["alexmchale@gmail.com"]
+  s.homepage    = "https://github.com/alexmchale/remove_white_border"
+  s.summary     = %q{This is a command line tool for removing a white border around an image.}
+  s.description = %q{This is a command line tool for removing the white border around an image, often created by scanners.}
 
   s.rubyforge_project = "remove_white_border"
+
+  s.add_dependency "rmagick", "~> 2.13.1"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
