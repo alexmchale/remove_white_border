@@ -1,0 +1,3 @@
+module RemoveWhiteBorder
+  # Your code goes here...
+end
