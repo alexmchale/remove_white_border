@@ -17,6 +17,7 @@ Runtime Dependencies
 
 * RMagick: Gem used for image manipulation
 * ImageMagick: Used by RMagick
+  * on Ubuntu, you need to install the `libmagickwand-dev` package to install RMagick
 
 Usage
 -----
